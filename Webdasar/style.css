@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Quicksand:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+h2,
+h3,
+h4 {
+  color: #000000;
+}
+
+/*bagian header*/
+header {
+  display: inline;
+}
+header .jumbotron {
+  padding: 20px;
+  background-color:#607EAA;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.jumbotron h2,
+span{
+  color: white;
+}
+.jumbotron span{
+  font-size: 24px;
+}
+
+img {
+  margin-top: 10px;
+}
+nav {
+  background-color: #34495e;
+  padding: 5px;
+  position:relative;
+  top: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+nav li a:hover {
+  font-weight: bold;
+  
+}
+
+/*content main*/
+.featured-image {
+  width: 100%;
+  cursor: pointer;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.logo {
+  width: 180px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+/* Grid berita */
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.cards{
+  width: 280px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.card-image img{
+  width:100% ;
+  height: 150px;
+  border-radius: 10px 10px 0px 0px;
+}
+.card-body h4{
+  text-align: center;
+  text-align: justify;
+  padding: 5px;
+}
+.card-body p{
+  text-align: justify;
+  margin-bottom:10px ;
+  padding: 5px;
+}
+.card-footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.card-footer button{
+  width: 150px;
+  background-color: #607EAA;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: .2s;
+
+}
+.card-footer button:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid #607EAA ;
+}
+.cards:hover{
+  box-shadow: 0 15px 15px  rgba(0, 0, 0, 0.1);
+}
+
+/*efek zoom-in*/
+.card-image .zoom-in{
+  overflow: hidden;
+}
+.card-image .zoom-in img{
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.card-image .zoom-in:hover img{
+  transform: scale(1.2);
+}
+
+.zoom-in{
+  overflow: hidden;
+    
+}
+.zoom-in .featured-image{
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.zoom-in:hover .featured-image{
+  transform: scale(1.2);
+}
+
+aside {
+
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+aside section{
+  margin: 0 auto;
+  text-align: center;
+}
+aside table{
+  text-align: left;
+  margin: 0 auto;
+}
+aside table th{
+  padding-right: 20px;
+}
+.profile header {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .logo{
+    width: 250px;
+  }
+}
+
+.clock{
+    border-radius: 15px;
+    border: 2px solid white;
+    color: #fff;
+    width: max-content;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+footer {
+  padding: 15px;
+  color: white;
+  background-color: #607EAA;
+  text-align: center;
+  font-weight: bold;
+}
